@@ -1,4 +1,4 @@
-package uz.pdp.appwarehouse.entity.template;
+package uz.pdp.appwarehouse.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -9,7 +9,7 @@ import uz.pdp.appwarehouse.entity.Attachment;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+@Entity(name = "attachmentContent")
 public class AttachmentContent {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
